@@ -14,6 +14,9 @@
 		AD752FAB2A75A48A001763A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752FAA2A75A48A001763A7 /* MainViewController.swift */; };
 		AD752FAD2A75A844001763A7 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752FAC2A75A844001763A7 /* MainViewController+TableView.swift */; };
 		AD752FB02A75A8E1001763A7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752FAF2A75A8E1001763A7 /* MainViewModel.swift */; };
+		AD752FB32A75B311001763A7 /* ServiceConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752FB22A75B311001763A7 /* ServiceConstant.swift */; };
+		AD752FB52A75B3DE001763A7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752FB42A75B3DE001763A7 /* Service.swift */; };
+		AD752FB82A75B492001763A7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AD752FB72A75B492001763A7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,8 @@
 		AD752FAA2A75A48A001763A7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AD752FAC2A75A844001763A7 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
 		AD752FAF2A75A8E1001763A7 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		AD752FB22A75B311001763A7 /* ServiceConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstant.swift; sourceTree = "<group>"; };
+		AD752FB42A75B3DE001763A7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD752FB82A75B492001763A7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +64,7 @@
 		AD752F932A75A3DA001763A7 /* UniversityInformation */ = {
 			isa = PBXGroup;
 			children = (
+				AD752FB12A75B303001763A7 /* Service */,
 				AD752FAE2A75A8D3001763A7 /* ViewModel */,
 				AD752FA92A75A42E001763A7 /* Controller */,
 				AD752FA82A75A41F001763A7 /* Files */,
@@ -94,6 +101,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		AD752FB12A75B303001763A7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AD752FB22A75B311001763A7 /* ServiceConstant.swift */,
+				AD752FB42A75B3DE001763A7 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +126,9 @@
 			dependencies = (
 			);
 			name = UniversityInformation;
+			packageProductDependencies = (
+				AD752FB72A75B492001763A7 /* Alamofire */,
+			);
 			productName = UniversityInformation;
 			productReference = AD752F912A75A3DA001763A7 /* UniversityInformation.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +157,9 @@
 				Base,
 			);
 			mainGroup = AD752F882A75A3DA001763A7;
+			packageReferences = (
+				AD752FB62A75B492001763A7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AD752F922A75A3DA001763A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -165,10 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD752FB02A75A8E1001763A7 /* MainViewModel.swift in Sources */,
+				AD752FB52A75B3DE001763A7 /* Service.swift in Sources */,
 				AD752FAB2A75A48A001763A7 /* MainViewController.swift in Sources */,
 				AD752F952A75A3DA001763A7 /* AppDelegate.swift in Sources */,
 				AD752F972A75A3DA001763A7 /* SceneDelegate.swift in Sources */,
 				AD752FAD2A75A844001763A7 /* MainViewController+TableView.swift in Sources */,
+				AD752FB32A75B311001763A7 /* ServiceConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD752FB62A75B492001763A7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD752FB72A75B492001763A7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD752FB62A75B492001763A7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD752F892A75A3DA001763A7 /* Project object */;
 }
