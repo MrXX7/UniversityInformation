@@ -13,6 +13,7 @@
 		AD752FA12A75A3DB001763A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD752F9F2A75A3DB001763A7 /* LaunchScreen.storyboard */; };
 		AD752FAB2A75A48A001763A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752FAA2A75A48A001763A7 /* MainViewController.swift */; };
 		AD752FAD2A75A844001763A7 /* MainViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752FAC2A75A844001763A7 /* MainViewController+TableView.swift */; };
+		AD752FB02A75A8E1001763A7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752FAF2A75A8E1001763A7 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AD752FA22A75A3DB001763A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD752FAA2A75A48A001763A7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AD752FAC2A75A844001763A7 /* MainViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+TableView.swift"; sourceTree = "<group>"; };
+		AD752FAF2A75A8E1001763A7 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		AD752F932A75A3DA001763A7 /* UniversityInformation */ = {
 			isa = PBXGroup;
 			children = (
+				AD752FAE2A75A8D3001763A7 /* ViewModel */,
 				AD752FA92A75A42E001763A7 /* Controller */,
 				AD752FA82A75A41F001763A7 /* Files */,
 			);
@@ -81,6 +84,14 @@
 				AD752FAC2A75A844001763A7 /* MainViewController+TableView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD752FAE2A75A8D3001763A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD752FAF2A75A8E1001763A7 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD752FB02A75A8E1001763A7 /* MainViewModel.swift in Sources */,
 				AD752FAB2A75A48A001763A7 /* MainViewController.swift in Sources */,
 				AD752F952A75A3DA001763A7 /* AppDelegate.swift in Sources */,
 				AD752F972A75A3DA001763A7 /* SceneDelegate.swift in Sources */,
@@ -300,7 +312,7 @@
 				INFOPLIST_FILE = UniversityInformation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,7 +343,7 @@
 				INFOPLIST_FILE = UniversityInformation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (

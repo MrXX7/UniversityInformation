@@ -9,6 +9,7 @@ import UIKit
 
 class MainViewController: UITableViewController {
     // MARK: - Properties
+    var viewModel = MainViewModel()
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -25,5 +26,6 @@ extension MainViewController {
     }
     func setup() {
         configureView()
+        registerTableView()
     }
 }
