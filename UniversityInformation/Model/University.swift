@@ -6,15 +6,14 @@
 //
 
 import Foundation
-
 struct University: Decodable {
-    let webPage: [String]
+    let webPages: [String]
     let country: String
     let domains: [String]
     let name: String
     
-    private enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey{
         case country, domains, name
-        case WebPages = "web_pages"
+        case webPages = "web_pages"
     }
 }
