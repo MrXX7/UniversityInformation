@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD64D0362A765E8600092033 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64D0352A765E8600092033 /* University.swift */; };
 		AD752F952A75A3DA001763A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752F942A75A3DA001763A7 /* AppDelegate.swift */; };
 		AD752F972A75A3DA001763A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD752F962A75A3DA001763A7 /* SceneDelegate.swift */; };
 		AD752F9E2A75A3DB001763A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD752F9D2A75A3DB001763A7 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD64D0352A765E8600092033 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
 		AD752F912A75A3DA001763A7 /* UniversityInformation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversityInformation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD752F942A75A3DA001763A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD752F962A75A3DA001763A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD64D0342A765E7D00092033 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD64D0352A765E8600092033 /* University.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AD752F882A75A3DA001763A7 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		AD752F932A75A3DA001763A7 /* UniversityInformation */ = {
 			isa = PBXGroup;
 			children = (
+				AD64D0342A765E7D00092033 /* Model */,
 				AD752FB12A75B303001763A7 /* Service */,
 				AD752FAE2A75A8D3001763A7 /* ViewModel */,
 				AD752FA92A75A42E001763A7 /* Controller */,
@@ -191,6 +202,7 @@
 				AD752FAB2A75A48A001763A7 /* MainViewController.swift in Sources */,
 				AD752F952A75A3DA001763A7 /* AppDelegate.swift in Sources */,
 				AD752F972A75A3DA001763A7 /* SceneDelegate.swift in Sources */,
+				AD64D0362A765E8600092033 /* University.swift in Sources */,
 				AD752FAD2A75A844001763A7 /* MainViewController+TableView.swift in Sources */,
 				AD752FB32A75B311001763A7 /* ServiceConstant.swift in Sources */,
 			);
@@ -336,7 +348,7 @@
 				INFOPLIST_FILE = UniversityInformation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -367,7 +379,7 @@
 				INFOPLIST_FILE = UniversityInformation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
